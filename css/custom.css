@@ -4,6 +4,9 @@
     padding: 0 8%;
     bottom: 100px;
 }
+.icon-a-appround26 {
+     animation: fa-spin 5s linear infinite;
+}
 /* 自定义样式调整 end */
 /* 侧边栏个人信息卡片动态渐变色 start */
 #aside-content > .card-widget.card-info {
