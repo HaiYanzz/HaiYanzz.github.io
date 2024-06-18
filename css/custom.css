@@ -1,11 +1,14 @@
 /* 自定义样式调整 start */
-#page-header #post-info{
+#page-header #post-info {
     text-align: center;
     padding: 0 8%;
     bottom: 100px;
 }
-.icon-a-appround26 {
-     animation: fa-spin 5s linear infinite;
+
+/* 翻页按钮居中 */
+#pagination {
+    width: 100%;
+    margin: auto;
 }
 /* 自定义样式调整 end */
 /* 侧边栏个人信息卡片动态渐变色 start */
@@ -25,6 +28,7 @@
     -moz-animation: Gradient 10s ease infinite;
     animation: Gradient 10s ease infinite !important;
 }
+
 @-webkit-keyframes Gradient {
     0% {
         background-position: 0% 50%;
@@ -36,6 +40,7 @@
         background-position: 0% 50%;
     }
 }
+
 @-moz-keyframes Gradient {
     0% {
         background-position: 0% 50%;
@@ -47,6 +52,7 @@
         background-position: 0% 50%;
     }
 }
+
 @keyframes Gradient {
     0% {
         background-position: 0% 50%;
@@ -69,6 +75,7 @@
     background-color: #3eb8be;
     border-radius: 8px;
 }
+
 /* 侧边栏个人信息卡片动态渐变色 end */
 
 /*页面样式调节 start*/
@@ -129,6 +136,7 @@ div#archive {
 [data-theme="dark"] #footer::before {
     background: transparent !important;
 }
+
 [data-theme="dark"] #page-header::before {
     background: transparent !important;
 }
@@ -137,6 +145,7 @@ div#archive {
 .read-mode #aside-content .card-widget {
     background: rgba(158, 204, 171, 0.5) !important;
 }
+
 .read-mode div#post {
     background: rgba(158, 204, 171, 0.5) !important;
 }
@@ -146,10 +155,12 @@ div#archive {
     background: rgba(25, 25, 25, 0.9) !important;
     color: #ffffff;
 }
+
 [data-theme="dark"] .read-mode div#post {
     background: rgba(25, 25, 25, 0.9) !important;
     color: #ffffff;
 }
+
 /*页面样式调节 end*/
 
 /*文章H1~H6标题小风车转动效果 start*/
@@ -164,6 +175,7 @@ h6::before {
     -webkit-animation: ccc 4s linear infinite;
     animation: ccc 4s linear infinite;
 }
+
 /* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */
 @-webkit-keyframes ccc {
     0% {
@@ -175,6 +187,7 @@ h6::before {
         transform: rotate(-1turn);
     }
 }
+
 @keyframes ccc {
     0% {
         -webkit-transform: rotate(0deg);
@@ -185,6 +198,7 @@ h6::before {
         transform: rotate(-1turn);
     }
 }
+
 /* 设置风车颜色 */
 #content-inner.layout h1::before {
     color: #ef50a8;
@@ -192,36 +206,42 @@ h6::before {
     font-size: 1.3rem;
     margin-top: -0.23rem;
 }
+
 #content-inner.layout h2::before {
     color: #fb7061;
     margin-left: -1.35rem;
     font-size: 1.1rem;
     margin-top: -0.12rem;
 }
+
 #content-inner.layout h3::before {
     color: #ffbf00;
     margin-left: -1.22rem;
     font-size: 0.95rem;
     margin-top: -0.09rem;
 }
+
 #content-inner.layout h4::before {
     color: #a9e000;
     margin-left: -1.05rem;
     font-size: 0.8rem;
     margin-top: -0.09rem;
 }
+
 #content-inner.layout h5::before {
     color: #57c850;
     margin-left: -0.9rem;
     font-size: 0.7rem;
     margin-top: 0rem;
 }
+
 #content-inner.layout h6::before {
     color: #5ec1e0;
     margin-left: -0.9rem;
     font-size: 0.66rem;
     margin-top: 0rem;
 }
+
 /* s设置风车hover动效 6s那里可以自己调节快慢*/
 #content-inner.layout h1:hover,
 #content-inner.layout h2:hover,
@@ -231,6 +251,7 @@ h6::before {
 #content-inner.layout h6:hover {
     color: var(--theme-color);
 }
+
 #content-inner.layout h1:hover::before,
 #content-inner.layout h2:hover::before,
 #content-inner.layout h3:hover::before,
@@ -241,6 +262,7 @@ h6::before {
     -webkit-animation: ccc 6s linear infinite;
     animation: ccc 6s linear infinite;
 }
+
 /*文章H1~H6标题小风车转动效果 end*/
 /* 文章页顶波浪线 start */
 /* 波浪css */
@@ -251,51 +273,61 @@ h6::before {
     bottom: -11px;
     z-index: 5;
 }
+
 .waves-area .waves-svg {
     width: 100%;
     height: 5rem;
 }
+
 /* Animation */
 
 .parallax > use {
     animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
+
 .parallax > use:nth-child(1) {
     animation-delay: -2s;
     animation-duration: 7s;
     fill: #f7f9febd;
 }
+
 .parallax > use:nth-child(2) {
     animation-delay: -3s;
     animation-duration: 10s;
     fill: #f7f9fe82;
 }
+
 .parallax > use:nth-child(3) {
     animation-delay: -4s;
     animation-duration: 13s;
     fill: #f7f9fe36;
 }
+
 .parallax > use:nth-child(4) {
     animation-delay: -5s;
     animation-duration: 20s;
     fill: #f7f9fe;
 }
+
 /* 黑色模式背景 */
 [data-theme="dark"] .parallax > use:nth-child(1) {
     animation-delay: -2s;
     animation-duration: 7s;
     fill: #18171dc8;
 }
+
 [data-theme="dark"] .parallax > use:nth-child(2) {
     animation-delay: -3s;
     animation-duration: 10s;
     fill: #18171d80;
 }
+
 [data-theme="dark"] .parallax > use:nth-child(3) {
     animation-delay: -4s;
     animation-duration: 13s;
     fill: #18171d3e;
 }
+
 [data-theme="dark"] .parallax > use:nth-child(4) {
     animation-delay: -5s;
     animation-duration: 20s;
@@ -310,6 +342,7 @@ h6::before {
         transform: translate3d(85px, 0, 0);
     }
 }
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
     .waves-area .waves-svg {
@@ -317,6 +350,7 @@ h6::before {
         min-height: 40px;
     }
 }
+
 /* 文章页顶波浪线 end */
 /* 新年侧边栏  start */
 
@@ -379,6 +413,7 @@ h6::before {
     width: 100%;
     background-color: rgba(0, 0, 0, .1);
 }
+
 /* 新年倒计时 end */
 /* 挂绳小猫咪 start */
 
@@ -439,7 +474,7 @@ body::-webkit-scrollbar {
 /**
  * @description: 滚动条样式  跟猫二选一
  */
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
     ::-webkit-scrollbar {
         width: 8px !important;
         height: 8px !important
@@ -459,6 +494,7 @@ body::-webkit-scrollbar {
         background-color: transparent
     }
 }
+
 /* 挂绳小猫咪  end */
 /* 顶部渐变条色加载条 start */
 .pace {

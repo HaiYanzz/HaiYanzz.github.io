@@ -20,7 +20,7 @@ var newYear = () => {
         }
     }(), jQuery(document).ready(function (e) {
         e("#newYear").wpSuperSnow({
-            flakes: ["https://tuchuang.voooe.cn/images/2023/01/02/yb1.webp", "https://tuchuang.voooe.cn/images/2023/01/02/yb2.webp", "https://tuchuang.voooe.cn/images/2023/01/02/yb3.webp"],
+            flakes: [""],
             totalFlakes: "100",
             zIndex: "999999",
             maxSize: "30",
